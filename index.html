@@ -11,20 +11,20 @@
 
 <body>
   <header class="main-header">
-    <div class="main-header__layout container">
+    <div class="main-header__container container">
       <div class="main-header__nickname">
         <a class="main-header__nickname-link" href="https://t.me/andreivlasov">@AV</a>
       </div>
       <nav class="main-header__nav nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="#">Мои работы</a>
+            <a class="nav__link" href="#works">Мои работы</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Обо мне</a>
+            <a class="nav__link" href="#hero">Обо мне</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Контакты</a>
+            <a class="nav__link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -32,10 +32,10 @@
   </header>
 
   <main class="main-page">
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="hero__container container">
         <div class="hero__description">
-          <h1 class="hero__title">Я - фронтендер</h1>
+          <h1 class="hero__title title">Я - фронтендер</h1>
           <p class="hero__text">Какая-то очень интересная информация обо мне. Очень интересная информация...</p>
           <button class="hero__button" type="button">Связаться со мной</button>
         </div>
@@ -44,8 +44,127 @@
         </div>
       </div>
     </section>
+    <section class="skills">
+      <div class="skills__container container">
+        <h2 class="skills__title title">Я умею</h2>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <div class="skills__skill-title-container">
+              <h3 class="skills__skill-title">HTML</h3>
+            </div>
+            <div class="skills__img">
+              <img src="./img/html.jpg" alt="Картинка про HTML.">
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__skill-title-container">
+              <h3 class="skills__skill-title">CSS</h3>
+            </div>
+            <div class="skills__img">
+              <img src="./img/css.jpg" alt="Картинка про CSS.">
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__skill-title-container">
+              <h3 class="skills__skill-title">JS</h3>
+            </div>
+            <div class="skills__img">
+              <img src="./img/back.jpg" alt="Картинка про JS.">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="works" id="works">
+      <div class="works__container container">
+        <h2 class="works__title title">Мои проекты</h2>
+        <ul class="works__list">
+          <li class="works__item">
+            <div class="works__item-text-container">
+              <h3 class="works__item-title">
+                <a class="works__item-title-link" href="#">Работа 1</a>
+              </h3>
+              <p class="works__description">Краткое описание работы</p>
+            </div>
+            <div class="works__img-container">
+              <a class="works__img-link" href="#">
+                <img src="./img/work-1.jpg" alt="Работа 1.">
+              </a>
+            </div>
+          </li>
+          <li class="works__item">
+            <div class="works__item-text-container">
+              <h3 class="works__item-title">
+                <a class="works__item-title-link" href="#">Работа 2</a>
+              </h3>
+              <p class="works__description">Краткое описание работы</p>
+            </div>
+            <div class="works__img-container">
+              <a class="works__img-link" href="#">
+                <img src="./img/work-2.jpg" alt="Работа 2.">
+              </a>
+            </div>
+          </li>
+          <li class="works__item">
+            <div class="works__item-text-container">
+              <h3 class="works__item-title">
+                <a class="works__item-title-link" href="#">Работа 3</a>
+              </h3>
+              <p class="works__description">Краткое описание работы</p>
+            </div>
+            <div class="works__img-container">
+              <a class="works__img-link" href="#">
+                <img src="./img/work-3.jpg" alt="Работа 3.">
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="contacts__container container">
+        <h1 class="contacts__title title">Контакты</h1>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h2 class="contacts__item-title">
+              <a class="contacts__link" href="https://github.com/CattusPhysicus">GitHub</a>
+            </h2>
+          </li>
+          <li class="contacts__item">
+            <h2 class="contacts__item-title">
+              <a class="contacts__link" href="https://t.me/andreivlasov">telegram</a>
+            </h2>
+          </li>
+          <li class="contacts__item">
+            <h2 class="contacts__item-title">
+              <a class="contacts__link" href="tel:+77777777777">+7(777) 7777777</a>
+            </h2>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 
+  <footer class="main-footer">
+    <div class="main-footer__container container">
+      <div class="main-footer__nickname">
+        <a class="main-footer__nickname-link" href="https://t.me/andreivlasov">@AV</a>
+      </div>
+      <nav class="main-footer__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#hero">Обо мне</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#works">Мои работы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
 
 </html>
